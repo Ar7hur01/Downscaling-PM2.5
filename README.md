@@ -17,14 +17,14 @@ The project follows a strict, chronologically numbered pipeline to ensure reprod
 ```text
 pm25-downscaling-wuerzburg/
 ├── data/                    # Ignored in version control
-│   ├── raw/                 # Raw downloads (Sensors, ICON, Sentinel, Traffic, DEM)
-│   ├── processed/           # Cleaned, masked, and merged datasets
+│   ├── raw/                 # Raw downloads (ICON, official Sensors, Traffic (confidential), TPI)
+│   ├── processed/           
 │   └── output/              # Final tabular data and generated PM2.5 TIFF maps
 ├── scripts/                 # Core execution pipeline
 │   ├── 01_download/         # Scripts for Earth Engine, API, and manual data retrieval
 │   ├── 02_preprocessing/    # Traffic IDW calculations, CRS projections, and cleaning
 │   ├── 03_fusion/           # Final feature dataset compilation
-│   ├── 04_modeling/         # Random Forest training, LLO CV, and Golden Day mapping
+│   ├── 04_modeling/         # Random Forest training, Feature Importanve, and mapping
 │   └── 05_validation/       # Loss analysis, precipitation validation, and statistics
 ├── .gitignore               # Excludes large data files and virtual environments
 ├── pyproject.toml / uv.lock # Dependency management configuration

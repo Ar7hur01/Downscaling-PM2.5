@@ -1,0 +1,21 @@
+# 1. Daten (Blockiert raw und processed, lässt output unangetastet)
+# Ignoriere alle Dateien im raw-Ordner (und allen Unterordnern)
+data/raw/**
+
+# Ausnahme 1: Erlaube Git, die Unterordner selbst zu lesen
+!data/raw/**/
+
+# Ausnahme 2: Lade die .gitkeep Dateien hoch
+!data/raw/**/.gitkeep
+
+# 2. Python & Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 3. Virtuelle Umgebungen (uv)
+.venv/
+
+# 4. Sensible Daten & IDE
+.env
+.idea/

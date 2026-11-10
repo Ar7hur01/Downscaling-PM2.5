@@ -1,6 +1,8 @@
-# 1. Daten (Blockiert raw und processed, lässt output unangetastet)
+# 1. Daten
 # Ignoriere alle Dateien im raw-Ordner (und allen Unterordnern)
-data/raw/**
+data/raw/New_ICON_D2_Rasters/**
+data/raw/MAIAC_AOD/**
+data/raw/Verkehrsdaten/**
 
 # Ausnahme 1: Erlaube Git, die Unterordner selbst zu lesen
 !data/raw/**/
@@ -19,4 +21,4 @@ __pycache__/
 # 4. Sensible Daten & IDE
 .env
 .idea/
-/data/processed/sensor_community_with_kopfklinik_may_august.csv
+

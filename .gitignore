@@ -19,3 +19,4 @@ __pycache__/
 # 4. Sensible Daten & IDE
 .env
 .idea/
+/data/processed/sensor_community_with_kopfklinik_may_august.csv

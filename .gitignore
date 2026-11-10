@@ -3,6 +3,7 @@
 data/raw/New_ICON_D2_Rasters/**
 data/raw/MAIAC_AOD/**
 data/raw/Verkehrsdaten/**
+data/raw/TPI/**
 
 # Ausnahme 1: Erlaube Git, die Unterordner selbst zu lesen
 !data/raw/**/
@@ -22,3 +23,7 @@ __pycache__/
 .env
 .idea/
 
+# Große Geodaten und Karten generell blockieren
+#*.tif
+#*.tiff
+#*.nc

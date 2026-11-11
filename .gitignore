@@ -2,7 +2,7 @@
 # Ignoriere alle Dateien im raw-Ordner (und allen Unterordnern)
 data/raw/New_ICON_D2_Rasters/**
 data/raw/MAIAC_AOD/**
-data/raw/Verkehrsdaten/**
+data/raw/Traffic/**
 data/raw/TPI/**
 
 # Ausnahme 1: Erlaube Git, die Unterordner selbst zu lesen

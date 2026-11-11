@@ -18,15 +18,15 @@ warnings.filterwarnings('ignore')
 # 1. Settings & Relative Paths
 # =========================================================
 try:
-    BASE_DIR = Path(__file__).resolve().parent
+    BASE_DIR = Path(__file__).resolve().parent.parent
 except NameError:
     BASE_DIR = Path.cwd()
 
 # Define directories
 RAW_DIR = BASE_DIR.parent / "data" / "raw"
 PROCESSED_DIR = BASE_DIR.parent / "data" / "processed"
-FIGURES_DIR = BASE_DIR.parent / "reports" / "figures"
-MAPS_DIR = BASE_DIR.parent / "reports" / "maps"
+FIGURES_DIR = BASE_DIR.parent / "data" / "output" / "Validationgraphs"
+MAPS_DIR = BASE_DIR.parent / "data" / "output" / "maps"
 
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 

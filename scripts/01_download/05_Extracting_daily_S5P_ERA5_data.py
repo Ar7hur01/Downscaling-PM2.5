@@ -10,20 +10,21 @@ import ee
 # =========================================================
 try:
     # Works when executing a standard .py script file
-    BASE_DIR = Path(__file__).resolve().parent
+    BASE_DIR = Path(__file__).resolve().parent.parent
 except NameError:
     # Fallback for interactive environments (Jupyter, IPython, PyCharm selection)
     BASE_DIR = Path.cwd()
 
 # Define the relative path to the Sensor Community CSV file.
 # Adjust the exact folder structure (e.g., 'data' / 'raw') to match your repository.
-FILE_PATH = BASE_DIR.parent.parent / "data" / "raw" / "sensor_community_complete_may_august.csv"
+FILE_PATH = BASE_DIR.parent.parent / "data" / "raw" / "sensor_community_with_kopfklinik_may_august.csv"
 
 # =========================================================
 # 2. Earth Engine Initialization
 # =========================================================
+project_id = input("Type in your Google Earth Engine project ID: ").strip()
 ee.Authenticate()
-ee.Initialize(project='GEE-name')
+ee.Initialize(project=project_id)
 
 # =========================================================
 # 3. Define Parameters

@@ -20,13 +20,13 @@ warnings.filterwarnings('ignore')
 # 1. Settings & Relative Paths
 # =========================================================
 try:
-    BASE_DIR = Path(__file__).resolve().parent
+    BASE_DIR = Path(__file__).resolve().parent.parent
 except NameError:
     BASE_DIR = Path.cwd()
 
 # Define data and output figure directories
 PROCESSED_DIR = BASE_DIR.parent / "data" / "processed"
-FIGURES_DIR = BASE_DIR.parent / "reports" / "figures"
+FIGURES_DIR = BASE_DIR.parent / "data" / "output" / "Validationgraphs"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
 # Input dataset

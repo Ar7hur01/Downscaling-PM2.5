@@ -17,7 +17,7 @@ except NameError:
 
 # Define the relative path to the Sensor Community CSV file.
 # Adjust the exact folder structure (e.g., 'data' / 'raw') to match your repository.
-FILE_PATH = BASE_DIR.parent.parent / "data" / "raw" / "sensor_community_with_kopfklinik_may_august.csv"
+FILE_PATH = BASE_DIR.parent / "data" / "raw" / "sensor_community_with_kopfklinik_may_august.csv"
 
 # =========================================================
 # 2. Earth Engine Initialization

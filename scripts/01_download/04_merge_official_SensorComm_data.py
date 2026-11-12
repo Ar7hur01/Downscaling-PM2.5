@@ -21,7 +21,7 @@ PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 # Input files
 path_sc = RAW_DIR / "sensor_community_complete_may_august.csv"
 # Note: Ensure both Kopfklinik files are placed in a 'Kopfklinik' subfolder inside 'data/raw'
-path_kk_pm25 = RAW_DIR / "Kopfklinik" / "PM2.5_Wuerzburg_2024.csv"
+path_kk_pm25 = RAW_DIR / "Kopfklinik" / "Kopfklinik_PM2.5_Wuerzburg_2024.csv"
 path_kk_pm10 = RAW_DIR / "Kopfklinik" / "Kopfklinik_PM10_2024.xlsx"
 
 # Output file
